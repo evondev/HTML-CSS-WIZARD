@@ -43,9 +43,14 @@ body {
 }
 /* Header */
 .header {
+  margin: 30px 0 40px;
+}
+.header__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 .header__logo {
   font-size: 20px;
@@ -76,4 +81,23 @@ body {
   align-items: center;
   justify-content: center;
   font-family: var(--poppins-font);
+}
+.header-menu__link:hover {
+  color: var(--primary-color);
+}
+/* hero */
+.hero__heading {
+  text-align: center;
+  font-family: var(--sora-font);
+  font-size: 60px;
+  font-weight: 800;
+  line-height: calc(76 / 60);
+  max-width: 947px;
+  margin: 0 auto 30px;
+}
+.hero__heading span {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #f961d8, #1663f9);
 }
